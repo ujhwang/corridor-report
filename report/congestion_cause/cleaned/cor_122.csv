@@ -1,0 +1,8 @@
+category,pct_2023,pct_2022,pct_2021
+Recurrent,0,0,0
+Signals,0,0,0
+Incidents,0,0.0805,0.0598
+Weather,0.0855,0.1423,0.1307
+Work Zone,0.1845,0,0.15689999999999998
+Holiday,0.0501,0.1791,0.17520000000000002
+Unclassified,0.7108,0.6877,0.6167

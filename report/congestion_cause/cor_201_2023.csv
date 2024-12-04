@@ -1,0 +1,8 @@
+"Causes of Congestion","Percentages","Vehicle Hours of Delay","Passenger","Commercial","Total Delay Cost"
+"Unclassified","82.75%","6,746 hrs","$238,594","$43,631","$282,225"
+"Work Zone","0.07%","6 hrs","$207","$38","$245"
+"Holiday","6.84%","557 hrs","$19,715","$3,605","$23,320"
+"Weather","5.51%","449 hrs","$15,883","$2,904","$18,787"
+"Signals","4.52%","369 hrs","$13,039","$2,384","$15,423"
+"Holiday & Weather","0.31%","26 hrs","$905","$165","$1,070"
+"Totals","100.0%","8,152 hrs","$288,342","$52,728","$341,071"

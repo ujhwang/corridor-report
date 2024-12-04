@@ -1,0 +1,2355 @@
+﻿<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<ss:Workbook xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"><ss:Styles>
+
+        <ss:Style ss:ID="DirectionTitleTopRightBottomLeft">
+          <ss:Alignment ss:Horizontal="Center"/>
+<ss:Font ss:Bold="1"/>
+
+                <ss:Borders>
+        <ss:Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="DataSourceTitleRightBottomLeft">
+          <ss:Alignment ss:Horizontal="Center"/>
+<ss:Font ss:Bold="1"/>
+
+                <ss:Borders>
+        <ss:Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="ColumnTitleBottomLeft">
+          <ss:Alignment ss:Horizontal="Center"/>
+
+                <ss:Borders>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="ColumnTitleBottom">
+          <ss:Alignment ss:Horizontal="Center"/>
+
+                <ss:Borders>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="ColumnTitleRightBottom">
+          <ss:Alignment ss:Horizontal="Center"/>
+
+                <ss:Borders>
+        <ss:Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="sInterval">
+          <ss:Alignment ss:Horizontal="Right"/>
+
+          
+        </ss:Style>
+        <ss:Style ss:ID="DataLeft">
+          
+                <ss:Borders>
+        <ss:Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="Data">
+          
+          
+        </ss:Style>
+        <ss:Style ss:ID="DataRight">
+          
+                <ss:Borders>
+        <ss:Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="DataBottomLeft">
+          
+                <ss:Borders>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="DataBottom">
+          
+                <ss:Borders>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style>
+        <ss:Style ss:ID="DataRightBottom">
+          
+                <ss:Borders>
+        <ss:Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+        <ss:Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+      </ss:Borders>
+
+        </ss:Style></ss:Styles><ss:Worksheet ss:Name="Travel time">
+                    <ss:Table><ss:Column ss:Index="2" ss:Width="5" />
+
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String">Travel time (minutes) for 8 TMC segments</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DirectionTitleTopRightBottomLeft" ss:MergeAcross="8"><ss:Data ss:Type="String">Northbound</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DirectionTitleTopRightBottomLeft" ss:MergeAcross="8"><ss:Data ss:Type="String">Southbound</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataSourceTitleRightBottomLeft" ss:MergeAcross="8"><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataSourceTitleRightBottomLeft" ss:MergeAcross="8"><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottomLeft"><ss:Data ss:Type="String">April 01, 2021 through December 31, 2021 (Every weekday)</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottom"><ss:Data ss:Type="String">April 01, 2021 through December 31, 2021 (Every weekday) - 25%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleRightBottom"><ss:Data ss:Type="String">April 01, 2021 through December 31, 2021 (Every weekday) - 75%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottomLeft"><ss:Data ss:Type="String">April 01, 2022 through December 30, 2022 (Every weekday)</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottom"><ss:Data ss:Type="String">April 01, 2022 through December 30, 2022 (Every weekday) - 25%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleRightBottom"><ss:Data ss:Type="String">April 01, 2022 through December 30, 2022 (Every weekday) - 75%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottomLeft"><ss:Data ss:Type="String">April 03, 2023 through December 29, 2023 (Every weekday)</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottom"><ss:Data ss:Type="String">April 03, 2023 through December 29, 2023 (Every weekday) - 25%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleRightBottom"><ss:Data ss:Type="String">April 03, 2023 through December 29, 2023 (Every weekday) - 75%</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottomLeft"><ss:Data ss:Type="String">April 01, 2021 through December 31, 2021 (Every weekday)</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottom"><ss:Data ss:Type="String">April 01, 2021 through December 31, 2021 (Every weekday) - 25%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleRightBottom"><ss:Data ss:Type="String">April 01, 2021 through December 31, 2021 (Every weekday) - 75%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottomLeft"><ss:Data ss:Type="String">April 01, 2022 through December 30, 2022 (Every weekday)</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottom"><ss:Data ss:Type="String">April 01, 2022 through December 30, 2022 (Every weekday) - 25%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleRightBottom"><ss:Data ss:Type="String">April 01, 2022 through December 30, 2022 (Every weekday) - 75%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottomLeft"><ss:Data ss:Type="String">April 03, 2023 through December 29, 2023 (Every weekday)</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleBottom"><ss:Data ss:Type="String">April 03, 2023 through December 29, 2023 (Every weekday) - 25%</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="ColumnTitleRightBottom"><ss:Data ss:Type="String">April 03, 2023 through December 29, 2023 (Every weekday) - 75%</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.48</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.56</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.56</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.56</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.66</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.66</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.35</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.42</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.58</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.58</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.51</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.56</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.75</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">12.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.49</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">12.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.4</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.84</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">12.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">11.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.3</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.53</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">12.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">11.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.28</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.93</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.93</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">12.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.93</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.71</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.68</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">12.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.23</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.58</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.14</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.9</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.52</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.06</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.9</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.27</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.73</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.13</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.93</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.76</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.49</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.37</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.61</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.32</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.31</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.16</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.17</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.21</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.26</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.95</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.48</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.67</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.75</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.55</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.64</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.56</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.64</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.8</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.75</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.91</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.85</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.73</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.88</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.87</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.78</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.93</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.85</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.8</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.07</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:00 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.01</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.87</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:15 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.9</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.93</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.84</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:30 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.25</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.73</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:45 AM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.03</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.95</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.73</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.71</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.56</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.18</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">12:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.39</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.08</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.48</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.03</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.08</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.25</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.27</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.73</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.84</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">1:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.27</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.84</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.3</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.54</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.85</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.58</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.31</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.85</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.84</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.85</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">2:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.21</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17.15</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.32</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.84</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.06</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17.66</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.06</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">3:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17.44</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">18.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.21</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17.48</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.32</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.84</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">18.06</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">18.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.46</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.43</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17.63</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">18.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.32</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">4:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17.33</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">18.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.17</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">17.33</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">18.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">20.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.06</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">18.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">18.43</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">19.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">21.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.43</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">18.23</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">19.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">21.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.3</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">5:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.91</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">19.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">22.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.22</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.68</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">16.29</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.48</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">20.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.4</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.76</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.82</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">18.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">19.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.65</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.93</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.82</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">17.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">18.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.42</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">6:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.52</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.58</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.21</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.69</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.32</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.79</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.49</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">16.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.1</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.82</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.82</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">7:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.81</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.36</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.7</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.72</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.33</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.73</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.14</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.48</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.13</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.76</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.13</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">8:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.2</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.13</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.49</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">16.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.96</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.92</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.24</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.24</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.3</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.69</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.91</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.32</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">15.05</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.06</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.95</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.41</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.86</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">15.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.72</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.04</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.88</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.8</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.74</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">9:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.22</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.79</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.15</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.84</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.07</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.56</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.36</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.63</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.94</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.49</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.09</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.9</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.35</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.65</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.59</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.78</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.53</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.25</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.57</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.18</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.97</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.67</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.44</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.19</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">10:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.74</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.03</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.1</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.47</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.62</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.89</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.13</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.88</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">15.12</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.96</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.48</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.19</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:00 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.54</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.98</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.25</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.15</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.55</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.86</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.61</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.09</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:15 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.13</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.35</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.6</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.16</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.5</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.75</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">14.26</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.17</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.51</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.85</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.14</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.37</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:30 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.93</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.19</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.38</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.73</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.01</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.43</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.71</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">14.02</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.45</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.82</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">13.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">14.39</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataLeft"><ss:Data ss:Type="Number">13.34</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="Data"><ss:Data ss:Type="Number">12.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRight"><ss:Data ss:Type="Number">13.93</ss:Data></ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="sInterval"><ss:Data ss:Type="String">11:45 PM</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottomLeft"><ss:Data ss:Type="Number">13.83</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">13.11</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">14.26</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottomLeft"><ss:Data ss:Type="Number">13.66</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">13.08</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">14.23</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottomLeft"><ss:Data ss:Type="Number">13.42</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">12.64</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRightBottom"><ss:Data ss:Type="Number">13.99</ss:Data></ss:Cell>
+<ss:Cell><ss:Data ss:Type="String"></ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottomLeft"><ss:Data ss:Type="Number">13.87</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">13.27</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">14.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottomLeft"><ss:Data ss:Type="Number">13.77</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">13.05</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">14.29</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottomLeft"><ss:Data ss:Type="Number">13.28</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataBottom"><ss:Data ss:Type="Number">12.56</ss:Data></ss:Cell>
+<ss:Cell ss:StyleID="DataRightBottom"><ss:Data ss:Type="Number">13.93</ss:Data></ss:Cell>
+      </ss:Row></ss:Table>
+              </ss:Worksheet></ss:Workbook>

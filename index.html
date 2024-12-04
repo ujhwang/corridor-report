@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link href='style/style.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="landing-page">
+        <div id="landing-header">
+            <div class="logo">
+                <a href="https://atlantaregional.org/what-we-do/transportation-planning/" target="_blank">
+                    <img src="style/arc-favicon-master.webp" alt="Logo with Text" style="max-width: 100%; max-height: 100%;">
+                </a>
+            </div>
+            <h1 id="landing-title">Corridor Performance Dashboard</h1>
+        </div>
+        <div id="landing-content">
+            <div id="landing-map"></div>
+            <div id="landing-table-container">
+                <div id="landing-filters">
+                    <select id="county-filter">
+                        <option value="">All Counties</option>
+                    </select>
+                    <select id="class-filter">
+                        <option value="">All Functional Classes</option>
+                    </select>
+                </div>
+                <div id="landing-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-sort="corridor">Corridor Name</th>
+                                <th data-sort="county">County</th>
+                                <th data-sort="f_class">Functional Class</th>
+                                <th data-sort="rank">Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody id="corridor-list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="landing-submit">
+            <button id="view-report">View Corridor Report</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <div class="title-group">
+                <div class="main-title">Corridor Performance Report</div>
+                <div class="subtitle">
+                    <div class="corridor">Please enter an index</div>
+                    <div class="rank">Corridor Improvement Priority Rank: <span id="rank">1</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="content">
+                <div class="map">
+                    <div id="map" style="height: 100%; width: 100%;"></div>
+                </div>
+                <div class="details">
+                    <div class="detail small">
+                        <div class="corridor-profile">
+                            <div class="header">
+                                <span class="material-symbols-outlined">road</span>
+                                <span>Corridor Profile</span>
+                            </div>
+                            <div class="content">
+                                <div><span class="highlight">County:</span>&emsp;<span id="county">-</span></div>
+                                <div><span class="highlight">Functional Class:</span>&emsp;<span id="f_class">-</span></div>
+                                <div><span class="highlight">Length:</span>&emsp;<span id="length">- miles</span></div>
+
+                                <div>
+                                    <span class="highlight">Avg. AADT:</span>
+                                    <span class="aadt-table">
+                                        <table>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>(2020)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>(2021)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>(2022)</td>
+                                            </tr>
+                                        </table>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail large">
+                        <div class="key-bottleneck">
+                            <div class="header">
+                                <span class="material-symbols-outlined">traffic_jam</span>
+                                <span>Key Bottleneck</span>
+                            </div>
+                            <div class="subheader">
+                                <span id="loc"></span>
+                            </div>
+                            <div class="content-grid">
+                                <div class="grid-item"></div>
+                                <div class="grid-item header">2021</div>
+                                <div class="grid-item header">2022</div>
+                                <div class="grid-item header">2023</div>
+                                
+                                <div class="grid-item">Events/Incidents
+                                    <span class="material-symbols-outlined info-icon" data-tooltip="The number of traffic events and incidents occurred within the bottleneck segment during the time period.">info</span>
+                                </div>
+                                <div class="grid-item bg1" id="events-2021">-</div>
+                                <div class="grid-item bg2" id="events-2022">-</div>
+                                <div class="grid-item bg3" id="events-2023">-</div>
+                                
+                                <div class="grid-item">Avg. Max Length
+                                    <span class="material-symbols-outlined info-icon" data-tooltip="Average length in miles of queues formed by congestion.">info</span>
+                                </div>                                
+                                <div class="grid-item bg1" id="max-len-2021">-</div>
+                                <div class="grid-item bg2" id="max-len-2022">-</div>
+                                <div class="grid-item bg3" id="max-len-2023">-</div>
+                                
+                                <div class="grid-item">Avg. Daily Duration
+                                    <span class="material-symbols-outlined info-icon" data-tooltip="The average amount of time per day that congestion is identified.">info</span>
+                                </div>
+                                <div class="grid-item bg1" id="daily-dur-2021">-</div>
+                                <div class="grid-item bg2" id="daily-dur-2022">-</div>
+                                <div class="grid-item bg3" id="daily-dur-2023">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail small">
+                        <div class="delay-cost">
+                            <div class="header">
+                                <span class="material-symbols-outlined">attach_money</span>
+                                <span>Delay Cost (2022)</span>
+                            </div>
+                            <div class="content-grid">
+                                <div class="grid-item header">Hours of Delay</div>
+                                <div class="grid-item header">Dollar Value</div>
+
+                                <div class="grid-item" id="hours-of-delay">- hours</div>
+                                <div class="grid-item" id="dollar-value">$ -</div>
+                            </div>
+                            <div class="footnote">
+                                Hourly cost is assumed to be $64.68 for commercial vehicles and $39.30 for passenger vehicles ($23.12 per passenger X 1.7 passengers per vehicle).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail large">
+                        <div class="reliability">
+                            <div class="header">
+                                <span class="material-symbols-outlined">hourglass_empty</span>
+                                <span>Reliability</span>
+                            </div>
+                            <div class="subheader">
+                                <span>(25th - 75th percentile values of peak-hour speed, mph)</span>
+                            </div>
+                            <div class="content-grid">
+                                <div class="grid-item"></div>
+                                <div class="grid-item header">2021</div>
+                                <div class="grid-item header">2022</div>
+                                <div class="grid-item header">2023</div>
+                            
+                                <div class="grid-item" id="dir1-am-label">Northbound <br> AM peak</div>
+                                <div class="grid-item bg1" id="dir1-am-2021">00 - 00</div>
+                                <div class="grid-item bg2" id="dir1-am-2022">00 - 00</div>
+                                <div class="grid-item bg3" id="dir1-am-2023">00 - 00</div>
+                            
+                                <div class="grid-item" id="dir1-pm-label">Northbound <br> PM peak</div>
+                                <div class="grid-item bg1" id="dir1-pm-2021">00 - 00</div>
+                                <div class="grid-item bg2" id="dir1-pm-2022">00 - 00</div>
+                                <div class="grid-item bg3" id="dir1-pm-2023">00 - 00</div>
+                            
+                                <div class="grid-item" id="dir2-am-label">Southbound <br> AM peak</div>
+                                <div class="grid-item bg1" id="dir2-am-2021">00 - 00</div>
+                                <div class="grid-item bg2" id="dir2-am-2022">00 - 00</div>
+                                <div class="grid-item bg3" id="dir2-am-2023">00 - 00</div>
+                            
+                                <div class="grid-item" id="dir2-pm-label">Southbound <br> PM peak</div>
+                                <div class="grid-item bg1" id="dir2-pm-2021">00 - 00</div>
+                                <div class="grid-item bg2" id="dir2-pm-2022">00 - 00</div>
+                                <div class="grid-item bg3" id="dir2-pm-2023">00 - 00</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-title">
+            <div class="line"></div>
+            <div class="text">Travel Time by Time of Day</div>
+            <div class="line"></div>
+        </div>
+        <div class="section" id="section2">
+            <div class="image-container">
+                <img id="travel-time-image" src="report/travel_time_time_of_day/cor_0.jpg" alt="Section 2 Image">
+            </div>
+        </div>
+        <div class="section-title">
+            <div class="line"></div>
+            <div class="text">Peak Period Travel Time by Day of Week</div>
+            <div class="line"></div>
+        </div>
+        <div class="section" id="section3">
+            <div class="image-container">
+                <div class="img-title">
+                    <div class="line"></div>
+                    <div class="text am">AM Peak</div>
+                    <div class="line"></div>
+                </div>
+                <img id="am-peak-image" src="report/travel_time_peak_period/cor_0_am_peak.png" alt="Image 1">
+            </div>
+            <div class="image-container">
+                <div class="img-title">
+                    <div class="line"></div>
+                    <div class="text pm">PM Peak</div>
+                    <div class="line"></div>
+                </div>
+                <img id="pm-peak-image" src="report/travel_time_peak_period/cor_0_pm_peak.png" alt="Image 2">
+            </div>
+        </div>
+        <div class="section-title">
+            <div class="line"></div>
+            <div class="text">Congestion: Travel Time Index
+                <span class="material-symbols-outlined info-icon" data-tooltip="Travel Time Index = travel time under traffic conditions / free-flow travel time">info</span>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="section" id="section4">
+            <div class="image-container">
+                <img src="report/congestion/test.png" alt="Section 4 Image">
+            </div>
+            <p class="footnote">* Travel Time Index (<b>TTI</b>) = travel time under traffic conditions / free-flow travel time</p>
+        </div>
+        <div class="section-title">
+            <div class="line"></div>
+            <div class="text">Congestion Causes</div>
+            <div class="line"></div>
+        </div>
+        <div class="congestion-cause-chart-container">
+            <div class="section" id="congestion-cause">
+                <canvas id="congestionCauseChart"></canvas>
+            </div>
+        </div>
+        <p class="footnote">* Total may exceed 100% due to overlapping causes of congestion.</p>
+        <div class="section-title">
+            <div class="line"></div>
+            <div class="text">Safety Analysis</div>
+            <div class="line"></div>
+        </div>
+        <div class="section" id="safety-analysis">
+            <div class="safety-charts-container">
+                <div class="chart-container" style="width: 80%;">
+                    <canvas id="crashFatalityChart"></canvas>
+                </div>
+                <div class="chart-container" style="width: 20%;">
+                    <canvas id="crashRateChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="section-title">
+            <div class="line"></div>
+            <div class="text">Air Quality Analysis</div>
+            <div class="line"></div>
+        </div>
+        <div class="section" id="air-quality-analysis">
+            <div id="air-quality-legend"></div>
+            <div class="air-quality-charts-container">
+                <div class="chart-container">
+                    <canvas id="pm25Chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="noxChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="coChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="section-title">
+            <div class="line"></div>
+            <div class="text">Equity Analysis</div>
+            <div class="line"></div>
+        </div>
+        <div class="section" id="equity-analysis">
+            <div class="equity-chart-container">
+                <canvas id="equityChart"></canvas>
+            </div>
+            <div class="total-ej-score">
+                <span>Total Equity Score: </span>
+                <span id="totalEJScore" style="font-size: 25px; font-weight: bold;">-</span>
+                <span style="font-size: 15px;"> / 100</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0/dist/chartjs-plugin-annotation.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+<script>
+
+    // Global variables
+    let landingMap;
+    let corridorData = [];
+    let selectedCorridorId = null;
+    let landingGeojsonLayer;  // for the landing map
+    let reportGeojsonLayer;   // for the report map
+
+
+    function initLandingMap() {
+        landingMap = L.map('landing-map').setView([33.7490, -84.3880], 9);
+
+        // Add this map click handler
+        landingMap.on('click', function() {
+            // Clear selection
+            if (selectedCorridor && landingGeojsonLayer) {  // Changed here
+                landingGeojsonLayer.eachLayer(function(layer) {  // Changed here
+                    if (layer.feature.properties.Corridor === selectedCorridor) {
+                        layer.setStyle(styleCorridors(layer.feature));
+                        layer.closePopup();
+                    }
+                });
+            }
+            selectedCorridor = null;
+            updateSelectedCorridorInTable(null);
+        });
+        
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(landingMap);
+
+        // Load County Boundaries
+        fetch('shp/22_counties.geojson')
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: function(feature) {
+                        return {
+                            color: '#ffffff',
+                            weight: 1,
+                            fillColor: '#ffffff',
+                            fillOpacity: 0.05,
+                            dashArray: '3, 5',
+                            opacity: 0.8
+                        };
+                    },
+                    onEachFeature: function(feature, layer) {
+                        // Add labels
+                        if (feature.properties && feature.properties.NAME) {
+                            layer.bindTooltip(feature.properties.NAME, {
+                                permanent: true, 
+                                direction: 'center',
+                                className: 'county-label'
+                            });
+                        }
+                    }
+                }).addTo(landingMap);
+            });
+
+        // Load Corridor Data
+        fetch('shp/corridors.geojson')
+            .then(response => response.json())
+            .then(data => {
+                landingGeojsonLayer = L.geoJSON(data, {  // Use landingGeojsonLayer
+                    style: styleCorridors,
+                    onEachFeature: onEachFeature
+                }).addTo(landingMap);
+            });
+    }
+
+    function getColorByRank(rank) {
+        // Define color ranges based on rank
+        if (rank <= 72) return '#ff4444';  // Top 20% - Bright Red
+        if (rank <= 144) return '#ffaa00'; // 20-40% - Bright Orange
+        if (rank <= 216) return '#ffff00'; // 40-60% - Yellow
+        if (rank <= 288) return '#00ff00'; // 60-80% - Bright Green
+        return '#00ffff';                  // Bottom 20% - Cyan
+    }
+
+    function styleCorridors(feature) {
+        return {
+            color: getColorByRank(feature.properties.rank),
+            weight: 2,
+            opacity: 0.7
+        };
+    }
+
+    function highlightFeature(e) {
+        let layer = e.target;
+        layer.setStyle({
+            weight: 5,
+            opacity: 1
+        });
+        layer.bringToFront();
+        showPopup(layer);
+    }
+
+    let selectedCorridor = null;
+
+    function resetHighlight(e) {
+        let layer = e.target;
+        let corridorData_entry = corridorData.find(c => c.corridor === layer.feature.properties.Corridor);
+        if (!corridorData_entry) return;
+        
+        if (corridorData_entry.id !== selectedCorridorId) {
+            layer.setStyle({
+                color: getColorByRank(layer.feature.properties.rank),
+                weight: 2,
+                opacity: 0.7
+            });
+        }
+        if (!selectedCorridorId) {
+            landingMap.closePopup();
+        }
+    }
+
+
+    function showPopup(layer) {
+        let properties = layer.feature.properties;
+        layer.bindPopup(`<b>${properties.Corridor}</b><br>Rank: ${properties.rank}`).openPopup();
+    }
+
+    function clickFeature(e) {
+        let layer = e.target;
+        let corridorData_entry = corridorData.find(c => c.corridor === layer.feature.properties.Corridor);
+        if (!corridorData_entry) return;
+        
+        let corridorId = corridorData_entry.id;
+
+        if (selectedCorridorId === corridorId) {
+            selectedCorridorId = null;
+            layer.setStyle(styleCorridors(layer.feature));
+        } else {
+            // Reset previously selected corridor if exists
+            if (landingGeojsonLayer && selectedCorridorId) {  // Changed here
+                landingGeojsonLayer.eachLayer(function(l) {   // Changed here
+                    let entry = corridorData.find(c => c.corridor === l.feature.properties.Corridor);
+                    if (entry && entry.id === selectedCorridorId) {
+                        l.setStyle(styleCorridors(l.feature));
+                    }
+                });
+            }
+            selectedCorridorId = corridorId;
+            layer.setStyle({
+                color: getColorByRank(layer.feature.properties.rank),
+                weight: 5,
+                opacity: 1
+            });
+        }
+
+        layer.bringToFront();
+        showPopup(layer);
+        
+        updateSelectedCorridorInTable(selectedCorridorId);
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: clickFeature
+        });
+    }
+
+    // Function to update the selected corridor in the table
+    function updateSelectedCorridorInTable(corridorId) {
+        const rows = document.querySelectorAll('#corridor-list tr');
+        rows.forEach(row => {
+            const rowCorridorData = corridorData.find(c => 
+                c.corridor === row.cells[0].textContent
+            );
+            if (rowCorridorData && rowCorridorData.id === corridorId) {
+                row.classList.add('selected');
+            } else {
+                row.classList.remove('selected');
+            }
+        });
+    }
+
+    // Load corridor data
+    function loadCorridorDataForLandingPage() {
+        fetch('corridor_info.csv')
+            .then(response => response.text())
+            .then(data => {
+                const rows = data.split('\n').slice(1); // Skip header row
+                corridorData = rows
+                    .map(row => row.split(','))
+                    .filter(row => row.length > 1 && row.some(cell => cell.trim() !== '')) // Filter out empty rows
+                    .map(([id, corridor, rank, county, length, f_class, factype]) => {
+                        return { 
+                            id: parseInt(id), 
+                            corridor, 
+                            rank: parseInt(rank), 
+                            county, 
+                            f_class, 
+                            factype: parseFloat(factype) 
+                        };
+                    });
+                populateTable(corridorData);
+                populateFilters(corridorData);
+            });
+    }
+
+    // Populate table with corridor data
+    function populateTable(data) {
+        const tbody = document.getElementById('corridor-list');
+        tbody.innerHTML = '';
+        data.forEach(corridor => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${corridor.corridor}</td>
+                <td>${corridor.county}</td>
+                <td>${corridor.f_class}</td>
+                <td>${corridor.rank}</td>
+            `;
+            row.addEventListener('click', () => selectCorridor(corridor.id));
+            tbody.appendChild(row);
+        });
+    }
+
+    // Populate filter dropdowns
+    function populateFilters(data) {
+        const counties = [...new Set(data.map(c => c.county))];
+        const classes = [...new Map(data.map(c => [c.f_class, c.factype]))]
+        .sort((a, b) => a[1] - b[1]); // Sort by FACTYPE
+        
+        const countyFilter = document.getElementById('county-filter');
+        const classFilter = document.getElementById('class-filter');
+        
+        counties.forEach(county => {
+            const option = document.createElement('option');
+            option.value = county;
+            option.textContent = county;
+            countyFilter.appendChild(option);
+        });
+        
+        classes.forEach(([cls, factype]) => {
+            const option = document.createElement('option');
+            option.value = cls;
+            option.textContent = cls;
+            classFilter.appendChild(option);
+        });
+    }
+
+    // Initialize filters
+    function initFilters() {
+        const countyFilter = document.getElementById('county-filter');
+        const classFilter = document.getElementById('class-filter');
+        
+        countyFilter.addEventListener('change', applyFilters);
+        classFilter.addEventListener('change', applyFilters);
+    }
+
+    // Apply filters
+    function applyFilters() {
+        const county = document.getElementById('county-filter').value;
+        const cls = document.getElementById('class-filter').value;
+        
+        const filteredData = corridorData.filter(corridor => 
+            (county === '' || corridor.county === county) &&
+            (cls === '' || corridor.f_class === cls)
+        );
+        
+        populateTable(filteredData);
+    }
+
+    // Initialize sorting
+    function initSorting() {
+        const headers = document.querySelectorAll('th[data-sort]');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const column = header.dataset.sort;
+                sortTable(column);
+            });
+        });
+    }
+
+    // Sort table
+    function sortTable(column) {
+        const sortedData = [...corridorData].sort((a, b) => {
+            if (a[column] < b[column]) return -1;
+            if (a[column] > b[column]) return 1;
+            return 0;
+        });
+        populateTable(sortedData);
+    }
+
+    // Select corridor
+    function selectCorridor(id) {
+        console.log("Selecting corridor with id:", id);
+        
+        if (selectedCorridorId === id) {
+            selectedCorridorId = null;
+            if (landingGeojsonLayer) {
+                landingGeojsonLayer.eachLayer(function(layer) {
+                    layer.setStyle(styleCorridors(layer.feature));
+                });
+            }
+        } else {
+            const corridor = corridorData.find(c => c.id === id);
+            console.log("Found corridor:", corridor);
+
+            if (!corridor) return;
+
+            selectedCorridorId = id;
+            
+            if (landingGeojsonLayer) {  // Use landingGeojsonLayer instead of geojsonLayer
+                landingGeojsonLayer.eachLayer(function(layer) {
+                    if (layer.feature.properties.Corridor === corridor.corridor) {
+                        layer.setStyle({
+                            color: getColorByRank(layer.feature.properties.rank),
+                            weight: 5,
+                            opacity: 1
+                        });
+                        layer.bringToFront();
+                        showPopup(layer);
+                    } else {
+                        layer.setStyle(styleCorridors(layer.feature));
+                    }
+                });
+            }
+        }
+        
+        updateSelectedCorridorInTable(selectedCorridorId);
+    }
+
+    // Initialize submit button
+    function initSubmitButton() {
+        const submitButton = document.getElementById('view-report');
+        submitButton.addEventListener('click', () => {
+            if (selectedCorridorId !== null) {
+                loadCorridorData(selectedCorridorId);
+                loadBottleneckData(selectedCorridorId);
+                updateDelayCost(selectedCorridorId);
+                updateReliabilityData(selectedCorridorId);
+                updateImages(selectedCorridorId);
+                
+                // Scroll to the individual report
+                document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                alert('Please select a corridor before viewing the report.');
+            }
+        });
+    }
+
+    function initLandingPage() {
+        initLandingMap();
+        loadCorridorDataForLandingPage();
+        initFilters();
+        initSorting();
+        initSubmitButton();
+    }
+
+    // Call this function when the page loads
+    document.addEventListener('DOMContentLoaded', initLandingPage);
+
+    let map;
+    let geojsonLayer;
+
+    function initMap() {
+        map = L.map('map').setView([33.7490, -84.3880], 10);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        fetch('shp/corridors.geojson')
+            .then(response => response.json())
+            .then(data => {
+                reportGeojsonLayer = L.geoJSON(data, {  // Use reportGeojsonLayer
+                    style: function(feature) {
+                        return {
+                            color: "#3388ff",
+                            weight: 2,
+                            opacity: 0.65
+                        };
+                    }
+                }).addTo(map);
+            });
+    }
+
+    // Call this function when the page loads
+    document.addEventListener('DOMContentLoaded', initMap);
+
+    function zoomToCorridor(corridorId) {
+        if (reportGeojsonLayer) {  // Changed here
+            let selectedFeature = null;
+            reportGeojsonLayer.eachLayer(function(layer) {  // Changed here
+                if (layer.feature.properties.Corridor === corridorId) {
+                    selectedFeature = layer;
+                    layer.setStyle({
+                        color: "#ff3c00",
+                        weight: 10,
+                        opacity: 0.9
+                    });
+                } else {
+                    layer.setStyle({
+                        color: "#3388ff",
+                        weight: 2,
+                        opacity: 0.65
+                    });
+                }
+            });
+
+            if (selectedFeature) {
+                map.fitBounds(selectedFeature.getBounds());
+            }
+        }
+    }
+
+
+    // Helper function to parse CSV values
+    function parseCSVValue(value, type = 'string') {
+        if (value === undefined || value.trim() === 'NA' || value.trim() === '') {
+            return null;
+        }
+        switch (type) {
+            case 'int':
+                return parseInt(value.trim(), 10);
+            case 'float':
+                return parseFloat(value.trim());
+            default:
+                return value.trim();
+        }
+    }
+
+    // Function to load CSV data
+    function loadCSV() {
+        return fetch('corridor_info.csv')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                const corridors = {};
+                const rows = data.split('\n').slice(1); // Skip the header row
+                let pm25Sum = 0, noxSum = 0, coSum = 0, count = 0;
+                let pm25Max = -Infinity, noxMax = -Infinity, coMax = -Infinity;
+                let crashMax = -Infinity, fatalityInjuryMax = -Infinity, crashRateMax = -Infinity, crashRateSum = 0;
+
+                rows.forEach((row, index) => {
+                    const [
+                        id, corridor, rank, county, length, f_class, factype, aadt20, aadt21, aadt22,
+                        ethnic_minority, racial_minority, female, youth, older_adults,
+                        foreign_born, limited_english, disability, low_income, total_ej_score,
+                        pm25, nox, co,
+                        crash_22, fatality_injury_22, crash_21, fatality_injury_21,
+                        crash_20, fatality_injury_20, crash_19, fatality_injury_19,
+                        crash_18, fatality_injury_18, crash_rate_a
+                    ] = row.split(',');
+
+                    const pm25Value = parseCSVValue(pm25, 'float');
+                    const noxValue = parseCSVValue(nox, 'float');
+                    const coValue = parseCSVValue(co, 'float');
+
+                    if (pm25Value !== null && noxValue !== null && coValue !== null) {
+                        pm25Sum += pm25Value;
+                        noxSum += noxValue;
+                        coSum += coValue;
+                        count++;
+                        
+                        pm25Max = Math.max(pm25Max, pm25Value);
+                        noxMax = Math.max(noxMax, noxValue);
+                        coMax = Math.max(coMax, coValue);
+                    }
+
+                    // Calculate max values for safety data
+                    const crashes = [crash_18, crash_19, crash_20, crash_21, crash_22].map(c => parseCSVValue(c, 'int'));
+                    const fatalitiesInjuries = [fatality_injury_18, fatality_injury_19, fatality_injury_20, fatality_injury_21, fatality_injury_22].map(f => parseCSVValue(f, 'int'));
+                    const crashRateValue = parseCSVValue(crash_rate_a, 'float');
+
+                    crashMax = Math.max(crashMax, ...crashes);
+                    fatalityInjuryMax = Math.max(fatalityInjuryMax, ...fatalitiesInjuries);
+                    crashRateMax = Math.max(crashRateMax, crashRateValue);
+                    crashRateSum += crashRateValue;
+
+                    corridors[parseCSVValue(id, 'int')] = {
+                        corridor: parseCSVValue(corridor),
+                        rank: parseCSVValue(rank, 'int'),
+                        county: parseCSVValue(county),
+                        length: parseCSVValue(length),
+                        f_class: parseCSVValue(f_class),
+                        factype: parseCSVValue(factype, 'int'),
+                        aadt20: parseCSVValue(aadt20, 'int'),
+                        aadt21: parseCSVValue(aadt21, 'int'),
+                        aadt22: parseCSVValue(aadt22, 'int'),
+                        ethnic_minority: parseCSVValue(ethnic_minority, 'int'),
+                        racial_minority: parseCSVValue(racial_minority, 'int'),
+                        female: parseCSVValue(female, 'int'),
+                        youth: parseCSVValue(youth, 'int'),
+                        older_adults: parseCSVValue(older_adults, 'int'),
+                        foreign_born: parseCSVValue(foreign_born, 'int'),
+                        limited_english: parseCSVValue(limited_english, 'int'),
+                        disability: parseCSVValue(disability, 'int'),
+                        low_income: parseCSVValue(low_income, 'int'),
+                        total_ej_score: parseCSVValue(total_ej_score, 'int'),
+                        pm25: pm25Value,
+                        nox: noxValue,
+                        co: coValue,
+                        crash_22: parseCSVValue(crash_22, 'int'),
+                        fatality_injury_22: parseCSVValue(fatality_injury_22, 'int'),
+                        crash_21: parseCSVValue(crash_21, 'int'),
+                        fatality_injury_21: parseCSVValue(fatality_injury_21, 'int'),
+                        crash_20: parseCSVValue(crash_20, 'int'),
+                        fatality_injury_20: parseCSVValue(fatality_injury_20, 'int'),
+                        crash_19: parseCSVValue(crash_19, 'int'),
+                        fatality_injury_19: parseCSVValue(fatality_injury_19, 'int'),
+                        crash_18: parseCSVValue(crash_18, 'int'),
+                        fatality_injury_18: parseCSVValue(fatality_injury_18, 'int'),
+                        crash_rate_a: parseCSVValue(crash_rate_a, 'float')
+                    };
+                });
+
+                const averages = {
+                    pm25: pm25Sum / count,
+                    nox: noxSum / count,
+                    co: coSum / count,
+                    crashRate: crashRateSum / count,
+                };
+
+                const maxValues = {
+                    pm25: pm25Max,
+                    nox: noxMax,
+                    co: coMax,
+                    crash: crashMax,
+                    fatalityInjury: fatalityInjuryMax,
+                    crashRate: crashRateMax
+                };
+
+                return { corridors, averages, maxValues };
+            });
+    }
+    
+    // Function to load data for a specific index
+    function loadCorridorData(index) {
+        loadCSV().then(({corridors, averages, maxValues}) => {
+            if (corridors) {
+                const corridorData = corridors[index];
+                if (corridorData) {
+                    document.querySelector('.corridor').textContent = corridorData.corridor || 'Invalid index';
+                    
+                    // Zoom to the selected corridor on the map
+                    zoomToCorridor(corridorData.corridor);
+
+                    // Update County, Functional Class, and Length using IDs
+                    document.getElementById('rank').textContent = corridorData.rank || 'N/A';
+                    document.getElementById('county').textContent = corridorData.county || 'N/A';
+                    document.getElementById('f_class').textContent = corridorData.f_class || 'N/A';
+                    document.getElementById('length').textContent = corridorData.length ? corridorData.length + ' miles' : 'N/A';
+                    
+                    // Update the AADT table with comma-separated values
+                    const aadtTableRows = document.querySelectorAll('.aadt-table tr');
+                    aadtTableRows[0].children[0].textContent = corridorData.aadt20 ? corridorData.aadt20.toLocaleString() : 'N/A'; // 2020 data
+                    aadtTableRows[1].children[0].textContent = corridorData.aadt21 ? corridorData.aadt21.toLocaleString() : 'N/A'; // 2021 data
+                    aadtTableRows[2].children[0].textContent = corridorData.aadt22 ? corridorData.aadt22.toLocaleString() : 'N/A'; // 2022 data
+                    
+                    // update congestion cause
+                    loadCongestionCauseData(index);
+
+                    // Update the safety charts
+                    createCrashFatalityChart(corridorData, maxValues);
+                    createCrashRateChart(corridorData, averages.crashRate, maxValues);
+                    
+                    // Update the air quality charts
+                    updateAirQualityCharts(corridorData, averages, maxValues);
+
+                    // Update the equity chart
+                    updateEquityChart(corridorData);
+                } else {
+                    document.querySelector('.corridor').textContent = 'Invalid index';
+                }
+            }
+        });
+    }
+
+    // Function to load data for a specific rank
+    function loadCorridorDataByRank(rank){
+        loadCSV().then(({corridors}) => {
+            const corridorEntry = Object.entries(corridors).find(([_, data]) => data.rank === rank);
+            
+            if (corridorEntry) {
+                const [index, _] = corridorEntry;
+                loadCorridorData(parseInt(index));
+                loadBottleneckData(parseInt(index));
+                updateDelayCost(parseInt(index));
+                updateReliabilityData(parseInt(index));
+            } else {
+                alert('No corridor found with the specified rank.');
+            }
+        });
+    }
+
+    // Function to load bottleneck_summary.csv and parse it using Promise.then
+    function loadBottleneckCSV() {
+        return fetch('report/bottleneck_summary.csv')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                const bottlenecks = {};
+                const rows = data.split('\n').slice(1); // Skip the header row
+                rows.forEach((row) => {
+                    const [
+                        cor, loc, avg_max_len_2023, avg_daily_dur_2023, agency_events_2023, waze_events_2023,
+                        avg_max_len_2022, avg_daily_dur_2022, agency_events_2022, waze_events_2022,
+                        avg_max_len_2021, avg_daily_dur_2021, agency_events_2021, waze_events_2021
+                    ] = row.split(',');
+
+                    // Helper function to handle "NA", undefined, and zero values appropriately
+                    const parseValue = (value, type = 'string') => {
+                        if (value === undefined || value.trim() === 'NA') return '-'; // Return '-' for missing or "NA" values
+                        if (type === 'int' || type === 'float') {
+                            return value.trim() === '' ? '-' : (type === 'int' ? parseInt(value.trim(), 10) : parseFloat(value.trim()));
+                        }
+                        return value.trim();
+                    };
+
+                    // Handle event calculations for each year
+                    const calculateEvents = (agency, waze) => {
+                        const agencyVal = parseValue(agency, 'int');
+                        const wazeVal = parseValue(waze, 'int');
+                        return agencyVal === '-' && wazeVal === '-' ? '-' : (agencyVal + wazeVal).toLocaleString();
+                    };
+
+                    bottlenecks[parseValue(cor)] = {
+                        loc: parseValue(loc),
+                        avg_max_len_2023: parseValue(avg_max_len_2023, 'float'),
+                        avg_daily_dur_2023: parseValue(avg_daily_dur_2023),
+                        events_2023: calculateEvents(agency_events_2023, waze_events_2023),
+                        avg_max_len_2022: parseValue(avg_max_len_2022, 'float'),
+                        avg_daily_dur_2022: parseValue(avg_daily_dur_2022),
+                        events_2022: calculateEvents(agency_events_2022, waze_events_2022),
+                        avg_max_len_2021: parseValue(avg_max_len_2021, 'float'),
+                        avg_daily_dur_2021: parseValue(avg_daily_dur_2021),
+                        events_2021: calculateEvents(agency_events_2021, waze_events_2021)
+                    };
+                });
+                return bottlenecks;
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    }
+    
+
+    // Function to load bottleneck data for a specific index
+    function loadBottleneckData(index) {
+        loadBottleneckCSV().then(bottlenecks => {
+            if (bottlenecks) {
+                const bottleneckData = bottlenecks[index];
+                if (bottleneckData) {
+                    // Update the bottleneck location
+                    document.getElementById('loc').textContent = bottleneckData.loc || 'N/A';
+
+                    // Update the Events/Incidents for 2021, 2022, 2023
+                    document.getElementById('events-2021').textContent = bottleneckData.events_2021;
+                    document.getElementById('events-2022').textContent = bottleneckData.events_2022;
+                    document.getElementById('events-2023').textContent = bottleneckData.events_2023;
+
+                    // Update the Avg. Max Length for 2021, 2022, 2023
+                    document.getElementById('max-len-2021').textContent = bottleneckData.avg_max_len_2021 + ' mi';
+                    document.getElementById('max-len-2022').textContent = bottleneckData.avg_max_len_2022 + ' mi';
+                    document.getElementById('max-len-2023').textContent = bottleneckData.avg_max_len_2023 + ' mi';
+
+                    // Update the Avg. Daily Duration for 2021, 2022, 2023
+                    document.getElementById('daily-dur-2021').textContent = bottleneckData.avg_daily_dur_2021;
+                    document.getElementById('daily-dur-2022').textContent = bottleneckData.avg_daily_dur_2022;
+                    document.getElementById('daily-dur-2023').textContent = bottleneckData.avg_daily_dur_2023;
+                } else {
+                    console.log('Invalid index for bottleneck data');
+                }
+            }
+        });
+    }
+
+    // Function to load the log_delay_cost CSV and parse it
+    function loadDelayCostCSV() {
+        return fetch('report/delay_cost/log_delay_cost_2022_0-359.csv')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                const delayCosts = {};
+                const rows = data.split('\n').slice(1); // Skip the header row
+                rows.forEach((row) => {
+                    const [cor, id, delay_cost, vehicle_hours_of_delay] = row.split(',');
+
+                    delayCosts[parseInt(cor.trim(), 10)] = {
+                        id: id ? id.trim() : '-',
+                        delay_cost: delay_cost ? Math.round(parseFloat(delay_cost.trim())) : '-',
+                        vehicle_hours_of_delay: vehicle_hours_of_delay ? Math.round(parseFloat(vehicle_hours_of_delay.trim())) : '-'
+                    };
+                });
+                return delayCosts;
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    }
+
+    // Function to update the delay cost and vehicle hours based on the corridor index
+    function updateDelayCost(index) {
+        loadDelayCostCSV().then(delayCosts => {
+            if (delayCosts) {
+                const delayData = delayCosts[index];
+                if (delayData) {
+                    // Update Hours of Delay and Dollar Value in the HTML, rounding both values
+                    document.getElementById('hours-of-delay').textContent = delayData.vehicle_hours_of_delay !== '-' ? `${delayData.vehicle_hours_of_delay.toLocaleString()} hours` : '-';
+                    document.getElementById('dollar-value').textContent = delayData.delay_cost !== '-' ? `$${delayData.delay_cost.toLocaleString()}` : '-';
+                } else {
+                    console.log('Invalid index for delay cost data');
+                }
+            }
+        });
+    }
+
+    // Helper function to handle "NA", undefined, and empty string values and return integers
+    function parseValue(value) {
+        if (value === undefined || value.trim() === 'NA' || value.trim() === '') return '-'; // Return '-' for missing or "NA" values
+        return Math.round(parseFloat(value.trim())); // Convert to integer (rounding)
+    }
+
+    // Helper function for directions (string values)
+    function parseString(value) {
+        if (value === undefined || value.trim() === 'NA' || value.trim() === '') return '-'; // Return '-' for missing or "NA" values
+        return value.trim(); // Return the string as it is
+    }
+
+    
+
+    // Function to load reliability_summary.csv and parse it using Promise.then
+    function loadReliabilityCSV() {
+        return fetch('report/reliability_summary.csv')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                const reliabilityData = {};
+                const rows = data.split('\n').slice(1); // Skip the header row
+                rows.forEach((row) => {
+                    const [
+                        cor, dir1, dir1_am_peak_25pctl_2021, dir1_am_peak_75pctl_2021,
+                        dir1_am_peak_25pctl_2022, dir1_am_peak_75pctl_2022,
+                        dir1_am_peak_25pctl_2023, dir1_am_peak_75pctl_2023,
+                        dir1_pm_peak_25pctl_2021, dir1_pm_peak_75pctl_2021,
+                        dir1_pm_peak_25pctl_2022, dir1_pm_peak_75pctl_2022,
+                        dir1_pm_peak_25pctl_2023, dir1_pm_peak_75pctl_2023,
+                        dir2, dir2_am_peak_25pctl_2021, dir2_am_peak_75pctl_2021,
+                        dir2_am_peak_25pctl_2022, dir2_am_peak_75pctl_2022,
+                        dir2_am_peak_25pctl_2023, dir2_am_peak_75pctl_2023,
+                        dir2_pm_peak_25pctl_2021, dir2_pm_peak_75pctl_2021,
+                        dir2_pm_peak_25pctl_2022, dir2_pm_peak_75pctl_2022,
+                        dir2_pm_peak_25pctl_2023, dir2_pm_peak_75pctl_2023
+                    ] = row.split(',');
+
+                    reliabilityData[parseInt(cor.trim(), 10)] = {
+                        dir1: parseString(dir1),
+                        dir1_am_2021: { p25: parseValue(dir1_am_peak_25pctl_2021), p75: parseValue(dir1_am_peak_75pctl_2021) },
+                        dir1_pm_2021: { p25: parseValue(dir1_pm_peak_25pctl_2021), p75: parseValue(dir1_pm_peak_75pctl_2021) },
+                        dir1_am_2022: { p25: parseValue(dir1_am_peak_25pctl_2022), p75: parseValue(dir1_am_peak_75pctl_2022) },
+                        dir1_pm_2022: { p25: parseValue(dir1_pm_peak_25pctl_2022), p75: parseValue(dir1_pm_peak_75pctl_2022) },
+                        dir1_am_2023: { p25: parseValue(dir1_am_peak_25pctl_2023), p75: parseValue(dir1_am_peak_75pctl_2023) },
+                        dir1_pm_2023: { p25: parseValue(dir1_pm_peak_25pctl_2023), p75: parseValue(dir1_pm_peak_75pctl_2023) },
+                        dir2: parseString(dir2),
+                        dir2_am_2021: { p25: parseValue(dir2_am_peak_25pctl_2021), p75: parseValue(dir2_am_peak_75pctl_2021) },
+                        dir2_pm_2021: { p25: parseValue(dir2_pm_peak_25pctl_2021), p75: parseValue(dir2_pm_peak_75pctl_2021) },
+                        dir2_am_2022: { p25: parseValue(dir2_am_peak_25pctl_2022), p75: parseValue(dir2_am_peak_75pctl_2022) },
+                        dir2_pm_2022: { p25: parseValue(dir2_pm_peak_25pctl_2022), p75: parseValue(dir2_pm_peak_75pctl_2022) },
+                        dir2_am_2023: { p25: parseValue(dir2_am_peak_25pctl_2023), p75: parseValue(dir2_am_peak_75pctl_2023) },
+                        dir2_pm_2023: { p25: parseValue(dir2_pm_peak_25pctl_2023), p75: parseValue(dir2_pm_peak_75pctl_2023) }
+                    };
+                });
+                return reliabilityData;
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    }
+
+    // Function to update reliability data for a specific index
+    function updateReliabilityData(index) {
+        loadReliabilityCSV().then(reliabilityData => {
+            if (reliabilityData) {
+                const reliability = reliabilityData[index];
+                if (reliability) {
+                    // Update the direction labels dynamically
+                    document.getElementById('dir1-am-label').innerHTML = `${reliability.dir1} <br> AM peak`;
+                    document.getElementById('dir1-pm-label').innerHTML = `${reliability.dir1} <br> PM peak`;
+                    document.getElementById('dir2-am-label').innerHTML = `${reliability.dir2} <br> AM peak`;
+                    document.getElementById('dir2-pm-label').innerHTML = `${reliability.dir2} <br> PM peak`;
+
+                    // Update AM peak values for 2021, 2022, 2023 for both directions (converted to integers)
+                    document.getElementById('dir1-am-2021').textContent = `${reliability.dir1_am_2021.p25} - ${reliability.dir1_am_2021.p75}`;
+                    document.getElementById('dir1-am-2022').textContent = `${reliability.dir1_am_2022.p25} - ${reliability.dir1_am_2022.p75}`;
+                    document.getElementById('dir1-am-2023').textContent = `${reliability.dir1_am_2023.p25} - ${reliability.dir1_am_2023.p75}`;
+
+                    document.getElementById('dir2-am-2021').textContent = `${reliability.dir2_am_2021.p25} - ${reliability.dir2_am_2021.p75}`;
+                    document.getElementById('dir2-am-2022').textContent = `${reliability.dir2_am_2022.p25} - ${reliability.dir2_am_2022.p75}`;
+                    document.getElementById('dir2-am-2023').textContent = `${reliability.dir2_am_2023.p25} - ${reliability.dir2_am_2023.p75}`;
+
+                    // Update PM peak values for 2021, 2022, 2023 for both directions (converted to integers)
+                    document.getElementById('dir1-pm-2021').textContent = `${reliability.dir1_pm_2021.p25} - ${reliability.dir1_pm_2021.p75}`;
+                    document.getElementById('dir1-pm-2022').textContent = `${reliability.dir1_pm_2022.p25} - ${reliability.dir1_pm_2022.p75}`;
+                    document.getElementById('dir1-pm-2023').textContent = `${reliability.dir1_pm_2023.p25} - ${reliability.dir1_pm_2023.p75}`;
+
+                    document.getElementById('dir2-pm-2021').textContent = `${reliability.dir2_pm_2021.p25} - ${reliability.dir2_pm_2021.p75}`;
+                    document.getElementById('dir2-pm-2022').textContent = `${reliability.dir2_pm_2022.p25} - ${reliability.dir2_pm_2022.p75}`;
+                    document.getElementById('dir2-pm-2023').textContent = `${reliability.dir2_pm_2023.p25} - ${reliability.dir2_pm_2023.p75}`;
+                } else {
+                    console.log('Invalid index for reliability data');
+                }
+            }
+        });
+    }
+
+    function loadCongestionCauseData(corridorIndex) {
+        fetch(`report/congestion_cause/cleaned/cor_${corridorIndex}.csv`)
+            .then(response => response.text())
+            .then(data => {
+                const rows = data.split('\n').slice(1);
+                const categories = [];
+                const values2021 = [];
+                const values2022 = [];
+                const values2023 = [];
+
+                rows.forEach(row => {
+                    const [category, y2021, y2022, y2023] = row.split(',');
+                    if (category && category.trim() !== '') {  // Only add non-empty categories
+                        categories.push(category);
+                        values2021.push(parseFloat(y2021) * 100);  // Multiply by 100 to convert to percentage
+                        values2022.push(parseFloat(y2022) * 100);
+                        values2023.push(parseFloat(y2023) * 100);
+                    }
+                });
+
+                createCongestionCauseChart(categories, values2021, values2022, values2023);
+            });
+    }
+
+    function createCongestionCauseChart(categories, values2021, values2022, values2023) {
+        const ctx = document.getElementById('congestionCauseChart').getContext('2d');
+        
+        if (window.congestionCauseChart instanceof Chart) {
+            window.congestionCauseChart.destroy();
+        }
+
+        window.congestionCauseChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: categories,
+                datasets: [
+                    {
+                        label: '2021',
+                        data: values2021,
+                        backgroundColor: 'rgba(255, 99, 132, 0.6)'
+                    },
+                    {
+                        label: '2022',
+                        data: values2022,
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                    },
+                    {
+                        label: '2023',
+                        data: values2023,
+                        backgroundColor: 'rgba(75, 192, 192, 0.6)'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: false,
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return value.toFixed(1) + '%';
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Congestion Causes by Year'
+                    },
+                    datalabels: {
+                        formatter: (value, context) => {
+                            if (isNaN(value) || value === 0 || value === null || value === undefined) {
+                                return null;  // Don't display label for NaN, 0, or missing values
+                            }
+                            return value.toFixed(1) + '%';  // Display percentage with 1 decimal point
+                        },
+                        color: 'black',
+                        anchor: 'end',
+                        align: 'top',
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+    }
+
+    function createCrashFatalityChart(data, maxValues) {
+        const ctx = document.getElementById('crashFatalityChart').getContext('2d');
+        
+        if (window.crashFatalityChart instanceof Chart) {
+            window.crashFatalityChart.destroy();
+        }
+        
+        window.crashFatalityChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['2018', '2019', '2020', '2021', '2022'],
+                datasets: [
+                    {
+                        label: 'Crashes',
+                        data: [data.crash_18, data.crash_19, data.crash_20, data.crash_21, data.crash_22],
+                        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        order: 2,
+                        yAxisID: 'y-axis-crashes'
+                    },
+                    {
+                        label: 'Fatalities & Injuries',
+                        data: [data.fatality_injury_18, data.fatality_injury_19, data.fatality_injury_20, data.fatality_injury_21, data.fatality_injury_22],
+                        type: 'line',
+                        borderColor: 'rgb(255, 99, 132)',
+                        borderWidth: 2,
+                        fill: false,
+                        order: 1,
+                        yAxisID: 'y-axis-fatalities',
+                        pointBackgroundColor: 'rgb(255, 99, 132)',
+                        pointRadius: 5,
+                        pointHoverRadius: 7
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    },
+                    'y-axis-crashes': {
+                        type: 'linear',
+                        position: 'left',
+                        beginAtZero: true,
+                        max: maxValues.crash,
+                        title: {
+                            display: true,
+                            text: 'Number of Crashes'
+                        },
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    'y-axis-fatalities': {
+                        type: 'linear',
+                        position: 'right',
+                        beginAtZero: true,
+                        max: maxValues.fatalityInjury,
+                        title: {
+                            display: true,
+                            text: 'Number of Fatalities & Injuries'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Crashes and Fatalities/Injuries by Year',
+                        font: {
+                            size: 15
+                        }
+                    },
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            usePointStyle: true,
+                            pointStyle: function(context) {
+                                console.log(context);
+                                return context.datasetIndex === 1 ? 'circle' : 'rect';
+                            }
+                        }
+                    },
+                    datalabels: {
+                        color: function(context) {
+                            return context.dataset.type === 'line' ? 'rgb(255, 99, 132)' : 'black';
+                        },
+                        font: {
+                            weight: 'bold',
+                            size: 14
+                        },
+                        formatter: function(value, context) {
+                            return value.toLocaleString(); // Add thousands separators
+                        },
+                        anchor: function(context) {
+                            return context.dataset.type === 'line' ? 'end' : 'start';
+                        },
+                        align: function(context) {
+                            return context.dataset.type === 'line' ? 'top' : 'mid';
+                        },
+                        offset: function(context) {
+                            return context.dataset.type === 'line' ? 5 : 0;
+                        }
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+    }
+
+    // Update the createCrashRateChart function to match the style
+    function createCrashRateChart(data, average, maxValues) {
+        const ctx = document.getElementById('crashRateChart').getContext('2d');
+        
+        if (window.crashRateChart instanceof Chart) {
+            window.crashRateChart.destroy();
+        }
+        
+        window.crashRateChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['5-Year Crash Rate'],
+                datasets: [
+                    {
+                        label: 'Crash Rate per 1M VMT',
+                        data: [data.crash_rate_a],
+                        backgroundColor: 'rgba(255, 159, 64, 0.6)',
+                        borderColor: 'rgba(255, 159, 64, 1)',
+                        borderWidth: 1
+                    }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: '(2018 - 2022)'
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        max: maxValues.crashRate,
+                        title: {
+                            display: true,
+                            text: 'Crashes per 1M VMT'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '5-Year Crash Rate (per 1M VMT)',
+                        font: {
+                            size: 15,
+                            weight: 'bold'
+                        },
+                        padding: {
+                            top: 10,
+                            bottom: 30
+                        }
+                    },
+                    legend: {
+                        display: false 
+                    },
+                    datalabels: {
+                        color: 'black',
+                        anchor: 'start',
+                        align: 'top',
+                        offset: 0,
+                        font: {
+                            weight: 'bold',
+                            size: 14
+                        },
+                        formatter: function(value, context) {
+                            return value.toFixed(2);
+                        }
+                    },
+                    annotation: {
+                        annotations: {
+                            line1: {
+                                type: 'line',
+                                yMin: average,
+                                yMax: average,
+                                borderColor: 'rgb(132, 3, 252)',
+                                borderWidth: 2,
+                                label: {
+                                    content: `Avg: ${average.toFixed(2)}`,
+                                    enabled: true,
+                                    yAdjust: -10,
+                                    backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                                    color: 'black',
+                                    font: {
+                                        weight: 'bold',
+                                        size: 12
+                                    },
+                                    padding: 5
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+
+        // Create custom legend
+        const legendContainer = document.getElementById('crash-rate-legend');
+        if (legendContainer) {
+            legendContainer.innerHTML = `
+                <div class="legend-container">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: rgba(75, 192, 192, 0.6);"></div>
+                        <span>${data.corridor}</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: rgb(255, 99, 132);"></div>
+                        <span>Region-wide Average</span>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    Chart.register(ChartDataLabels, window['chartjs-plugin-annotation']);
+
+    // Create a new function to update the air quality charts
+    function updateAirQualityCharts(corridorData, averages, maxValues) {
+        const createBarChart = (canvasId, label, value, average, maxValue) => {
+            const ctx = document.getElementById(canvasId);
+            if (!ctx) {
+                console.error(`Canvas element ${canvasId} not found`);
+                return;
+            }
+
+            try {
+                if (window[canvasId + 'Chart'] instanceof Chart) {
+                    window[canvasId + 'Chart'].destroy();
+                }
+                
+                window[canvasId + 'Chart'] = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [label],
+                        datasets: [{
+                            label: `${corridorData.corridor}`,
+                            data: [value],
+                            backgroundColor: 'rgba(54, 162, 235, 0.6)', 
+                        borderColor: 'rgba(54, 162, 235, 1)', // 
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        aspectRatio: 0.5,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: maxValue,
+                                title: {
+                                    display: true,
+                                    text: label
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false // Hide individual chart legends
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return `${context.dataset.label}: ${context.parsed.y.toFixed(2)}`;
+                                    }
+                                }
+                            },
+                            datalabels: {
+                                color: 'black',
+                                anchor: 'start',
+                                align: 'top',
+                                formatter: function(value, context) {
+                                    return value.toFixed(2);
+                                },
+                                font: { 
+                                    weight: 'bold',
+                                    size: 14
+                                }
+                            },
+                            annotation: {
+                                annotations: {
+                                    line1: {
+                                        type: 'line',
+                                        yMin: average,
+                                        yMax: average,
+                                        borderColor: 'rgb(132, 3, 252)',
+                                        borderWidth: 2,
+                                        label: {
+                                            content: `Avg: ${average.toFixed(2)}`,
+                                            enabled: true,
+                                            yAdjust: -10,
+                                            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                                            color: 'black',
+                                            font: {
+                                                weight: 'bold',
+                                                size: 12
+                                            },
+                                            padding: 5
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error(`Error creating chart for ${label}:`, error);
+            }
+        };
+
+        createBarChart('pm25Chart', 'PM2.5 (μg/m³ per mile²)', corridorData.pm25, averages.pm25, maxValues.pm25);
+        createBarChart('noxChart', 'NOx (ppb per mile²)', corridorData.nox, averages.nox, maxValues.nox);
+        createBarChart('coChart', 'CO (ppb per mile²)', corridorData.co, averages.co, maxValues.co);
+
+        // Create a single legend for all three charts
+        const legendContainer = document.getElementById('air-quality-legend');
+        if (legendContainer) {
+            legendContainer.innerHTML = `
+                <div class="legend-container">
+                    <div class="legend-item">
+                        <div class="legend-color legend-color-corridor"></div>
+                        <span>${corridorData.corridor}</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color legend-color-average"></div>
+                        <span>Region-wide Average</span>
+                    </div>
+                </div>
+            `;
+        } else {
+            console.error('Legend container not found');
+        }
+    }
+
+    // Create a new function to update the equity chart
+    function updateEquityChart(corridorData) {
+        const ctx = document.getElementById('equityChart').getContext('2d');
+        
+        // Destroy existing chart if it exists
+        if (window.equityChart instanceof Chart) {
+            window.equityChart.destroy();
+        }
+        
+        window.equityChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Ethnic Minority', 'Racial Minority', 'Female', 'Youth', 'Older Adults', 'Foreign Born', 'Limited English', 'Disability', 'Low Income'],
+                datasets: [{
+                    label: 'Equity Factors',
+                    data: [
+                        corridorData.ethnic_minority,
+                        corridorData.racial_minority,
+                        corridorData.female,
+                        corridorData.youth,
+                        corridorData.older_adults,
+                        corridorData.foreign_born,
+                        corridorData.limited_english,
+                        corridorData.disability,
+                        corridorData.low_income,
+                    ],
+                    fill: true,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    pointBackgroundColor: 'rgb(255, 99, 132)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(255, 99, 132)'
+                }]
+            },
+            options: {
+                elements: {
+                    line: {
+                        borderWidth: 3
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 4,
+                        ticks: {
+                            stepSize: 1,
+                            font: {
+                                size: 14
+                            }
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 15,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Update the total EJ score
+        document.getElementById('totalEJScore').textContent = Math.round(corridorData.total_ej_score/36*100);
+    }
+
+    // Function to update images based on corridor index
+    function updateImages(corridorIndex) {
+        document.getElementById('travel-time-image').src = `report/travel_time_time_of_day/cor_${corridorIndex}.jpg`;
+        document.getElementById('am-peak-image').src = `report/travel_time_peak_period/cor_${corridorIndex}_am_peak.png`;
+        document.getElementById('pm-peak-image').src = `report/travel_time_peak_period/cor_${corridorIndex}_pm_peak.png`;
+    }
+
+    // Set default text and load data for index 0 on page load 
+    document.addEventListener('DOMContentLoaded', function() {
+        loadCorridorData(0);
+        loadBottleneckData(0);
+        updateDelayCost(0);
+        updateReliabilityData(0);
+        updateImages(0);
+    });
+
+</script>
