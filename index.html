@@ -301,6 +301,13 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p style="color: white; font-size: 1.1rem; text-shadow: 2px 2px 4px rgba(155, 155, 155, 0.7);">
+          If you have any questions or encounter any errors, please contact 
+          <a target="_blank" href="https://ujhwang.github.io/" style="color: lightblue; text-shadow: 2px 2px 4px rgba(155, 155, 155, 0.7);">Uijeong "UJ" Hwang</a> at 
+          <a href="mailto:uhwang@atlantaregional.org" style="color: lightblue; text-shadow: 2px 2px 4px rgba(155, 155, 155, 0.7);">uhwang@atlantaregional.org</a>.
+        </p>
+    </footer>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -490,7 +497,7 @@
 
     // Load corridor data
     function loadCorridorDataForLandingPage() {
-        fetch('corridor_info.csv')
+        fetch('report/corridor_info.csv')
             .then(response => response.text())
             .then(data => {
                 const rows = data.split('\n').slice(1); // Skip header row
@@ -738,7 +745,7 @@
 
     // Function to load CSV data
     function loadCSV() {
-        return fetch('corridor_info.csv')
+        return fetch('report/corridor_info.csv')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -1062,17 +1069,19 @@
                 const rows = data.split('\n').slice(1); // Skip the header row
                 rows.forEach((row) => {
                     const [
-                        cor, dir1, dir1_am_peak_25pctl_2021, dir1_am_peak_75pctl_2021,
-                        dir1_am_peak_25pctl_2022, dir1_am_peak_75pctl_2022,
-                        dir1_am_peak_25pctl_2023, dir1_am_peak_75pctl_2023,
+                        cor, dir1, 
+                        dir1_am_peak_25pctl_2021, dir1_am_peak_75pctl_2021,
                         dir1_pm_peak_25pctl_2021, dir1_pm_peak_75pctl_2021,
+                        dir1_am_peak_25pctl_2022, dir1_am_peak_75pctl_2022,
                         dir1_pm_peak_25pctl_2022, dir1_pm_peak_75pctl_2022,
+                        dir1_am_peak_25pctl_2023, dir1_am_peak_75pctl_2023,
                         dir1_pm_peak_25pctl_2023, dir1_pm_peak_75pctl_2023,
-                        dir2, dir2_am_peak_25pctl_2021, dir2_am_peak_75pctl_2021,
-                        dir2_am_peak_25pctl_2022, dir2_am_peak_75pctl_2022,
-                        dir2_am_peak_25pctl_2023, dir2_am_peak_75pctl_2023,
+                        dir2, 
+                        dir2_am_peak_25pctl_2021, dir2_am_peak_75pctl_2021,
                         dir2_pm_peak_25pctl_2021, dir2_pm_peak_75pctl_2021,
+                        dir2_am_peak_25pctl_2022, dir2_am_peak_75pctl_2022,
                         dir2_pm_peak_25pctl_2022, dir2_pm_peak_75pctl_2022,
+                        dir2_am_peak_25pctl_2023, dir2_am_peak_75pctl_2023,
                         dir2_pm_peak_25pctl_2023, dir2_pm_peak_75pctl_2023
                     ] = row.split(',');
 
